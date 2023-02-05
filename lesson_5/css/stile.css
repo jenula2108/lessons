@@ -1,0 +1,43 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+boby{
+	max-width: 1440px;
+	font-family: "Poppins";
+}
+h2 {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 40px;
+	color: #212529;
+}
+p{
+	padding-bottom: 40px;
+}
+.content {
+	margin: 0px auto 80px auto;
+	max-width: 816px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 25px;
+	color: #6C757D;;
+}
+.content__headerone{
+	max-width: 400px;
+	margin-bottom: 40px;
+}
+.content__headertwo{
+	width: 605px;
+	margin-bottom: 35px;
+}
+.content__text {
+}
+.image {
+	max-width: 1240px;
+	margin: 0px auto 80px auto;
+}
+[alt="man in a boat"]{
+	margin-right: 24px;
+}
