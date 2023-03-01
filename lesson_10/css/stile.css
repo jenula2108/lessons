@@ -1,0 +1,119 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+
+.header {
+}
+.header__content {
+}
+.header__logo {
+}
+.logo-image {
+}
+.logo-image__img {
+}
+.header__navigation {
+}
+.navigation-list {
+}
+.navigation-list__items {
+}
+.navigation-list__item {
+}
+.navigation-list__link {
+}
+.header__social {
+}
+.row-social {
+}
+.row-social__items {
+}
+.row-social__item {
+}
+.row-social__link {
+}
+.header__vertical-line {
+}
+.header__search {
+}
+.search {
+}
+.search__iag {
+}
+.bigbord {
+}
+.bigbord__content {
+}
+.bigbord__image {
+}
+.image-content {
+}
+.image-content__img {
+}
+.image-content__title {
+}
+.image-content__sabtitle {
+}
+.gallery {
+}
+.gallery__content {
+}
+.title {
+}
+.title__text {
+}
+.title__navigation {
+}
+.conteiner {
+}
+.conteiner__row {
+}
+.column {
+}
+.column-design {
+}
+.column-design__image {
+}
+.column-design__img {
+}
+.column-design__data {
+}
+.data {
+}
+.column-design__text {
+}
+.column-trending {
+}
+.column-trending__image {
+}
+.column-trending__image_another-width {
+}
+.column-trending__img {
+}
+.column-trending__data {
+}
+.column-trending__text {
+}
+.footer {
+}
+.footer__content {
+}
+.footer__nav {
+}
+.footer__logo {
+}
+.footer__navigation {
+}
+.footer__social {
+}
+.footer__area {
+}
+.footer__row {
+}
+.footer__adress {
+}
+.footer__data {
+}
