@@ -1,0 +1,278 @@
+@import url(fonts.css);
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body{
+	
+
+}
+
+.wrapper {
+	background-color:  #E5E5E5;
+	overflow: clip;
+	min-height: 100%;
+}
+.header__content{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.categories__item,
+.sab__items,
+.menu__items
+li{
+	display: inline-block;
+	font-family: "inter";
+	font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+}
+.categories__link:hover,
+.link__item:hover{
+	color: 
+	#3056D3;
+	text-decoration: underline;
+}
+.header {
+	height: 110px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+
+.logo {
+	display: inline-block;
+	margin-right: 32px;
+
+}
+.logo__image {
+	vertical-align: middle;
+}
+.logo__image:not(:last-child){
+	margin-right: 15px;
+}
+
+.menu {
+	display: inline-block;
+	margin-right: 154px;
+	padding: 45px 0;
+}
+.menu__categories {
+	border-radius: 5px;
+	background: #F4F7FF;
+	display: inline-block;
+	width: 172px;
+	height: 47px;
+	text-align: center;
+	margin-right: 57px;
+	
+}
+.categories {
+}
+.categories__items {
+	
+}
+.categories__item {
+	position: relative;
+	display: inline-block;
+}
+.sab {
+	
+}
+.categories__link {
+	display: inline-block;
+	padding-top: 11px;
+}
+.link__item_stik::after,
+.categories__link::after{
+	content:"";
+	display: inline-block;
+	width: 12px;
+	height: 6px;
+	background-image: url(../img/Vector.svg);
+	margin-left:13px ;
+}
+.link {
+}
+.sab__menu {
+	text-align: start;
+	position: absolute;
+	top: 100%;
+	left: 10%;
+	width: 180px;
+	height: 240px;
+	visibility: hidden;
+
+}
+.sab__menu{
+}
+.sab__triangle{
+	width: 34px;
+	height: 50px;
+	background:url(../img/Polygon\ 18.png) 10px bottom no-repeat;
+}
+.sab__items{
+	position: relative;
+	z-index: 2;
+	padding: 20px 0;
+	padding-left: 20px;
+	background-color: white;
+border-radius: 5px;
+
+
+}
+.sab__item {
+	font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #637381;
+}
+.sab__item:hover{
+	color: 
+	#3056D3;
+	text-decoration: underline;
+} 
+.sab__item:not(:last-child){
+	padding-bottom: 12px;
+}
+.sab__link_stik{
+}
+.sab__link_stik::after{
+	content:"";
+	display: inline-block;
+	width: 5px;
+	height: 10px;
+	background-image: url(../img/Vector.png);
+	margin-left:67px ;
+}
+.menu__items {
+	display: inline-block;
+}
+
+.menu__item:not(:last-child){
+	margin-right: 35px;
+}
+.list__item:not(:last-child){
+	margin-right: 35px;
+}
+.link__item {
+}
+.link__item_stik {
+
+}
+.icons {
+	display: inline-block;
+}
+.icons {
+}
+.icons__link:not(:last-child) {
+	margin-right: 15px;
+}
+.image__item{
+
+}
+.menu__categories:hover .sab__menu{
+	visibility: visible;
+}
+.fashon {
+	visibility: hidden;
+	position: absolute;
+	left: 100%;
+	top:60px;
+	width: 652px;
+	height: 292.81px;
+background-color: #FFFFFF;
+border-radius: 5px;
+
+}
+.fashon__items {
+	padding: 28px 0;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #637381;
+}
+.sab-sab {
+display: inline-block;
+}
+.sab-sab__item {
+}
+.sab-sab__link {
+}
+.fashon__bord {
+	display: inline-block;
+	margin-left: 69px;
+	margin-top: 30px;
+}
+.bord {
+	position: relative;
+	vertical-align:top;
+}
+.bord__image {
+position: absolute;
+top: 0;
+}
+.bord__content {
+	position: absolute;
+	z-index: 2;
+}
+.shop {
+	width: 128px;
+	height: 112.18px;
+	margin: 62px 47px;
+	text-align: center;
+}
+.shop__price {
+	font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+color: #FFFFFF;
+
+text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.22);
+}
+.shop__disscount {
+	font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+
+text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
+}
+.shop__botton {
+
+}
+.botton__klic{
+	display: inline-block;
+	font-weight: 700;
+font-size: 11px;
+line-height: 13px;
+	color: #FFFFFF;
+	width: 83px;
+height: 23.77px;
+background: #3056D3;
+padding: 4px 0;
+}
+.sab__item:hover .fashon{
+	visibility: visible;
+}
+.sab__item:nth-child(2){
+	width: 180px;
+}
+.fashon__items li:first-child{
+	color: #212B36;
+	font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+padding-bottom: 19px;
+}
+.fashon__items li:not(:last-child){
+padding-bottom: 11px;
+}
+.fashon__items:first-child{
+	margin-right: 80px;
+	padding-left: 30px;
+}
+.fashon__items li:hover:not(:first-child){
+	color: 
+	#3056D3;
+	text-decoration: underline;
+}
+
