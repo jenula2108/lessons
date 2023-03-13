@@ -1,0 +1,257 @@
+@import url(fonts.css);
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body{	
+
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	background-color: rgb(73, 77, 78);
+}
+main{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+.wrap{
+	border: 4px rgb(39, 37, 36) solid;
+	margin-bottom: 15px;
+}
+h2{
+	margin: 10px auto 30px auto;
+	width: 300px;
+	text-align: center;
+color: aliceblue;
+font-size: 40px;
+text-transform: uppercase;
+border: 2px solid;
+border-radius: 5px;
+}
+.content {
+display: flex;
+justify-content: space-around;
+	padding: 20px 0;
+	font-size: 30px;
+	color: aliceblue;
+	text-align: center;
+	margin-bottom: 50px;
+	perspective: 400px;
+}
+.content__block{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	background-color: rgba(98, 90, 90, 0.4);
+	border-radius: 15px;
+	transition-duration: 0.3s;
+}
+.block__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+display: flex;
+	width: 300px;
+	height: 300px;
+	align-items: center;
+	justify-content: center;
+	transition-duration: 0.3s;
+	border-radius: 15px;
+	text-transform: uppercase;
+}
+.block__item:not(:last-child){
+	margin-right: 30px;
+}
+.block_1{
+background-color: chocolate;
+}
+.block_2{
+	background-color: rgb(3, 68, 29);
+}
+.block_3{
+	background-color: rgb(20, 20, 179);
+}
+
+/* TRANSLATE */
+.translate_1:hover div{
+	transform: translate(20px,20px);
+}
+.translate_2:hover div{
+	transform: translateY(20px);
+}
+.translate_3:hover div{
+	transform: translateX(20px);
+}
+/* scale */
+.scale_1:hover div{
+	transform: scale(-1,1);
+}
+.scale_2:hover div{
+	transform: scale(0.5,1.2);
+}
+.scale_3:hover div{
+	transform: scale(1.3);
+}
+/* rotate */
+.rotate_1:hover div{
+transform: rotatey(50deg);
+
+}
+.rotate_2:hover div{
+	transform: rotate(-50deg);
+}
+.rotate_3:hover div{
+	transform: rotate(360deg);
+}
+/* skew */
+.skew_1:hover div{
+transform: skew(40deg, 0deg);
+}
+.skew_2:hover div{
+	transform: skew(-40deg, 20deg);
+}
+.skew_3:hover div{
+	transform: skewy(-20deg);
+}
+/* multi */
+.multi_1:hover div{
+transform:translate(-50px,-50px) skewy(0deg) rotate(-30deg) scale(1.5);
+}
+.multi_2:hover div{
+transform: translate(50px,-50px) scale(1.2) rotate(360deg);
+}
+.multi_3:hover div{
+transform: translate(50px,50px) scalex(1.3) skew(-30deg, 0deg);
+}
+/* transform-origin */
+.transform-origin_1 div{
+	transform-origin: bottom;
+}
+.transform-origin_1:hover div{
+	transform: rotate(180deg);
+}
+.transform-origin_2 div{
+	transform-origin: top;
+}
+.transform-origin_2:hover div{
+	transform: rotatex(180deg);
+}
+.transform-origin_3 div{
+	transform-origin: right;
+}
+.transform-origin_3:hover div{
+	transform: rotatey(180deg);
+	
+}
+/* perspective */
+.perspective_1{
+	perspective: 500px;
+}
+.perspective_1:hover div{
+	transform:rotatex(50deg) ;
+}
+.perspective_2,.perspective_3{
+	perspective: 600px;
+}
+.perspective_2 div{
+	transform-origin: right bottom;
+}
+.perspective_2:hover div{
+	transform: rotatex(-180deg);
+}
+.perspective_3 div{
+	transform-origin: left;
+}
+.perspective_3:hover div{
+	transform: translate(100%,0) rotatey(-50deg);
+}
+/* translate3d */
+.translate3d_1,
+.translate3d_2,
+.translate3d_3{
+	perspective: 400px;
+}
+.translate3d_1:hover div{
+transform: translate3d(40px, 40px, 30px);
+}
+.translate3d_2:hover div{
+transform: scale3d(0.5,0.5,-1);
+}
+.translate3d_3:hover div{
+	transform: rotate3d(0,0,1, 45deg);
+}
+.multi3d_1,
+.multi3d_2,
+.multi3d_3{
+	perspective: 400px;
+}
+.multi3d_1:hover div{
+	transform: rotate3d(1,0,0, 45deg);
+}
+.multi3d_2:hover div{
+	
+}
+.multi3d_2:hover div{
+	
+}
+.transform-style_1,
+.transform-style_2,
+.transform-style_3{
+	perspective: 600px;
+	transform-style: preserve-3d;
+}
+.transform-style_1:hover div{
+	transform: rotate3d(1,0,0, 45deg);
+}
+.transform-style_2:hover div{
+	
+}
+.transform-style_2:hover div{
+	
+}
+
+/* backface-visibility */
+.content{
+	perspective: 600px;
+}
+.backface-visibility{
+	transform-style: preserve-3d;
+}
+.backface-visibility__back{
+transform: rotateY(-180deg);
+background-color: rgb(142, 83, 11);
+}
+.backface-visibility__front{
+	z-index: 2;
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+}
+.content:hover .backface-visibility{
+	transform: rotateY(-180deg);
+}
+footer{
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.link {
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgb(5, 92, 35);
+	width: 150px;
+	height: 50px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color:#fff;
+	border-radius: 15px;
+
+}
+.link:hover{
+
+	color: aqua;
+}
+.link__car {
+	display: inline-block;
+	padding-top: 13px;
+}
