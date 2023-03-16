@@ -352,9 +352,12 @@ background-color: #f30606f3;
 	border-top-right-radius: 40%;
 	border-top-left-radius: 40%;
 }
-.wheel__item{
-	animation:turnover 4s linear normal,
-	turnover_back 4s linear normal 8.5s forwards;
+.wheel__item_back{
+	animation:turnover 3s linear normal 1s;
+}
+.wheel__item_front{
+	animation:turnover 3s linear normal 1s,
+	turnover_back 4s linear normal 9.5s forwards;
 }
 
 @keyframes turnover{
