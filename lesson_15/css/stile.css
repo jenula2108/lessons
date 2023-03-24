@@ -62,9 +62,10 @@ color: #333333;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
+.services__column:not(:last-child){
 	margin-bottom: 40px;
 }
-
 
 .services__image {
 	flex: 0 0 62.1%; /* 746/1200 */
@@ -114,7 +115,6 @@ margin-bottom: 40px;
 	display: flex;
 	justify-content: space-between;
 	gap: 32px;
-	
 	flex-wrap: wrap;
 }
 .column__wrap_text{
