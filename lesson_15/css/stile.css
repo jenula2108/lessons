@@ -113,8 +113,8 @@ margin-bottom: 40px;
 .room__column {
 	display: flex;
 	justify-content: space-between;
-	row-gap: 32px;
-	margin-bottom: 32px;
+	gap: 32px;
+	
 	flex-wrap: wrap;
 }
 .column__wrap_text{
