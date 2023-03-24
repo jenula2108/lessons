@@ -74,7 +74,7 @@ img{
 	width: 100%;
 	transition: all 0.3s;
 }
-.services__image img:hover{
+img:hover{
 	transform: scale(1.1);
 }
 .services__content {
@@ -105,6 +105,7 @@ color: #000000;
 }
 
 .room__baner {
+	overflow: hidden;
 	margin-bottom: 100px;
 }
 
@@ -140,6 +141,9 @@ color: #000000;
 .column__footer {
 	display: flex;
 	justify-content: space-between;
+}
+.column__image{
+	overflow: hidden;
 }
 
 
