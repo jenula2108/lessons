@@ -329,6 +329,11 @@ gap: 107px;
 .methods__checkbox{
 	margin-bottom: 24px;
 }
+@media (max-width: 459.98px){
+	.radio__wrap{
+		gap: 87px;
+	}
+}
 .methods__button {
 	display: flex;
 	justify-content: space-between;
@@ -352,6 +357,7 @@ letter-spacing: 0.5px;
 	color: #828282;
 	transition: all 0.3s;
 }
+
 .methods__reset:hover{
 	transform: translate(3px 0px);
 	font-size: 16px;
