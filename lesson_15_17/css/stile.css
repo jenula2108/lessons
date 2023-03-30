@@ -39,6 +39,11 @@ color: #333333;
 	padding-top: 100px;
 	margin-bottom: 40px;
 }
+@media (max-width: 459.98px){
+	.services__title {
+		padding-top: 40px;
+	}
+}
 .services__title::after{
 	content:"";
 	display: inline-block;
@@ -108,6 +113,11 @@ img:hover{
 	text-align: center;
 	margin-bottom: 53px;
 }
+@media (max-width: 459.98px){
+	.room__header{
+	margin-bottom: 23px;
+	}
+}
 .room__title {
 	font-weight: 700;
 font-size: 56px;
@@ -120,7 +130,11 @@ margin-bottom: 40px;
 	overflow: hidden;
 	margin-bottom: 100px;
 }
-
+@media (max-width: 459.98px){
+	.room__baner{
+	margin-bottom: 30px;
+	}
+}
 .room__column {
 	display: flex;
 	justify-content: space-between;
@@ -130,6 +144,11 @@ margin-bottom: 40px;
 .column__wrap_text{
 	padding-bottom: 50px;
 	
+}
+@media (max-width: 459.98px){
+	.column__wrap_text{
+		padding-bottom: 20px;
+	}
 }
 .column__wrap {
 	flex: 0 0 48.666667%; /* 584/1200 */
