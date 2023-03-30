@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- &display=swap -->
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/stile.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lesson_16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header></header>
+		<main class="main">
+			<div class="main__conteiner ">
+				<div class="form">
+					<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form__form">
+						<div class="form__title">
+							<h2>Billing Details</h2>
+						</div>
+						<div class="form__row input">
+							<div class="input__box">
+								<input type="text" name="first_name" placeholder="First name*" autocomplete="off"
+									required>
+								<input type="text" name="last_name" placeholder="Last name*" autocomplete="off"
+									required>
+							</div>
+						</div>
+						<div class="form__row input">
+							<div class="input__box">
+								<input type="text" name="adress" placeholder="Address*" autocomplete="off" required>
+								<input type="text" name="address_line_2" placeholder="Address line 2" autocomplete="off"
+									required>
+							</div>
+						</div>
+						<div class="form__row input">
+							<div class="input__box">
+								<select name="country" id="" placeholder="Country*" required>
+									<option value="">Country*</option>
+									<option value="">USA</option>
+									<option selected value="">Ukraine</option>
+									<option value="">Great Britain</option>
+									<option value="">France</option>
+								</select>
+								<input type="text" name="city/town" placeholder="City/Town*" autocomplete="off"
+									required>
+							</div>
+						</div>
+						<div class="form__row input">
+							<div class="input__box">
+								<input type="tel" name="postcode/zip" placeholder="Postcode / ZIP*" autocomplete="off"
+									required>
+								<input type="tel" name="phone" placeholder="Phone*" autocomplete="off" required>
+							</div>
+						</div>
+						<div class="form__row input">
+							<div class="input__box">
+								<input type="tel" name="postcode/zip_2" placeholder="Postcode / ZIP*" autocomplete="off"
+									required>
+								<input type="tel" name="phone_2" placeholder="Phone*" autocomplete="off" required>
+							</div>
+						</div>
+						<div class="form__textarea">
+							<textarea autocomplete="off" name="information" id="" cols="30" rows="10"
+								placeholder="Additional information" value="information"></textarea>
+						</div>
+						<div class="form__checkbox checkbox">
+							<div class="checkbox__item">
+								<input id="acc-01" class="checkbox__input" autocomplete="off" name="sccount"
+									type="checkbox">
+								<label class="checkbox__label" for="acc-01">Create Account</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="acc-02" class="checkbox__input" autocomplete="off" name="diff_adress"
+									type="checkbox">
+								<label class="checkbox__label" for="acc-02">Ship to a different address?</label>
+							</div>
+						</div>
+						<h2>Apply Coupon to get discount!</h2>
+						<div class="form__coupon">
+							<input type="text" name="coupon" placeholder="Coupon code" autocomplete="off">
+							<button type="submit">
+								Apply Code
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="adress">
+					<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="adress__form">
+						<div class="adress__title">
+							<h2>Shipping Address</h2>
+						</div>
+						<div class="adress__row input">
+							<div class="input__box">
+								<label class="input__label" for="email">Email Address <span>*</span></label>
+								<input class="input__item" id="email" type="email" name="mail"
+									placeholder="roni_cost@example.com" autocomplete="off" required>
+							</div>
+							<div class="input__box">
+								<label class="input__label" for="pass">Password</label>
+								<input class="input__item" id="pass" type="password" name="pass"
+									placeholder="*************" value="" autocomplete="off">
+							</div>
+							<div class="input__box">
+								<label class="input__label" for="code">Zip/Postal Code</label>
+								<input class="input__item" id="code" type="tel" name="zip" placeholder="" value=""
+									autocomplete="off">
+							</div>
+							<p class="adress__text">
+								You already have an account with us. Sign in or continue as guest.
+							</p>
+						</div>
+						<div class="adress__button">
+							<button type="submit">
+								login
+							</button>
+							<a href="#">Forgot Your Password?</a>
+						</div>
+					</form>
+				</div>
+				<div class="methods">
+					<form action="https://jsonplaceholder.typicode.com/posts" class="methods__form" method="post">
+						<div class="methods__row">
+							<div class="input__box">
+								<label class="input__label" for="f_name">First Name<span>*</span></label>
+								<input class="input__item" id="f_name" type="text" name="first_name" placeholder=""
+									autocomplete="off" required>
+							</div>
+							<div class="input__box">
+								<label class="input__label" for="l_name">Last Name<span>*</span></label>
+								<input class="input__item" id="l_name" type="text" name="last_name" placeholder=""
+									autocomplete="off" required>
+							</div>
+							<div class="input__box">
+								<label class="input__label" for="comp">Company</label>
+								<input class="input__item" id="comp" type="text" name="company" placeholder=""
+									autocomplete="off">
+							</div>
+							<div class="input__box">
+								<label class="input__label" for="st.adres">Street Address<span>*</span></label>
+								<input class="input__item" id="st.adress" type="text" name="street_adress"
+									placeholder="" autocomplete="off" required>
+							</div>
+							<div class="input__box input__box_not-label">
+								<input class="input__item" id="st.adress" type="text" name="street_adress"
+									placeholder="" autocomplete="off">
+							</div>
+							<div class="input__box input__box_not-label">
+								<input class="input__item" id="st.adress" type="text" name="street_adress"
+									placeholder="" autocomplete="off">
+							</div>
+							<div class="input__box">
+								<label class="input__label" for="country">Country<span>*</span></label>
+								<input class="input__item" id="country" type="text" name="country" placeholder=""
+									autocomplete="off" required>
+							</div>
+							<div class="input__box">
+								<label class="input__label" for="st/prov">State/Province<span>*</span></label>
+								<select class="input__item" name="country" id="st/prov" placeholder="" required>
+									<option selected value="">Please select a region, state or province</option>
+									<option value="">Region 1</option>
+									<option value="">Region 2</option>
+									<option value="">Region 3</option>
+									<option value="">Region 4</option>
+								</select>
+							</div>
+						</div>
+						<div class="methods__title">
+							<h2>Shipping Methods</h2>
+						</div>
+						<div class="methods__checkbox radio">
+							<div class="radio__wrap">
+								<div class="radio__item">
+									<input id="$5" class="radio__input" autocomplete="off" name="metod" value="5$"
+										type="radio">
+									<label class="radio__label" for="$5">$5</label>
+								</div>
+								<div class="radio__text radio__text_pading-right">Fixed</div>
+								<div class="radio__text radio__text_margin-left">Flat Rate</div>
+							</div>
+							<div class="radio__wrap radio__wrap_max-weight">
+								<div class="radio__item">
+									<input id="$10" class="radio__input" autocomplete="off" name="metod" value="10$"
+										type="radio">
+									<label class="radio__label" for="$10">$10</label>
+								</div>
+								<div class="radio__text">Table Rate</div>
+								<div class="radio__text radio__text_margin-left">Best Way</div>
+							</div>
+						</div>
+						<div class="methods__button">
+							<button type="submit" class="methods__submit">
+								next
+							</button>
+							<button type="reset" class="methods__reset">
+								back
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+	</div>
+	</main>
+	<footer>
+
+	</footer>
+	</div>
+</body>
+
+</html>
