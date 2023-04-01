@@ -19,6 +19,7 @@ main{
 	max-width: 1270px;
 	margin: 0 auto;
 	padding: 0 15px;
+	overflow: hidden;
 }
 .header {
 	font-weight: 500;
@@ -163,6 +164,7 @@ width: 136px;
 	}
 	.header__burger{
 		display: block;
+		padding: 20px 10px;
 	}
 	.header__logo{
 		flex: 1 1 auto;
@@ -172,27 +174,26 @@ width: 136px;
 	}
 	.header__conteiner{
 		min-height: 60px;
-
+		overflow: hidden;
 		z-index: 2;
 	}
 	.burger__navigation {
 		z-index: 1;
 		position: absolute;
 		bottom: -60px;
-		right: 0;
+		left: 0;
 		height: 100%;
-		width: 100%;
+		width: 0;
 		background-color: #e3e8ee;
-		transform: translate(400px, 0px);
+		
 		visibility: hidden;
 		opacity: 0;
 		transition: all 0.3s;
 		font-size: 20px;
-
-	}
-	.burger:active .burger__navigation{
 	
-		transform: translate(0px, 0px);
+	}
+	.burger:hover .burger__navigation{
+		width: 100%;
 		visibility: visible;
 		opacity: 1;
 	}
