@@ -183,13 +183,18 @@ width: 136px;
 		height: 100%;
 		width: 100%;
 		background-color: #e3e8ee;
-		transform: translate(500px, 0px);
+		transform: translate(400px, 0px);
+		visibility: hidden;
+		opacity: 0;
 		transition: all 0.3s;
 		font-size: 20px;
 
 	}
-	.burger:hover .burger__navigation{
+	.burger:active .burger__navigation{
+	
 		transform: translate(0px, 0px);
+		visibility: visible;
+		opacity: 1;
 	}
 	.main-burger {
 	}
@@ -209,7 +214,6 @@ width: 136px;
 		position: relative;
 	}
 	.sad-menu-burger__content{
-		padding-left: 10px;
 		position: absolute;
 		visibility: hidden;
 		top: 0;
@@ -220,6 +224,7 @@ width: 136px;
 	
 	}
 	.sab-menu-burger:hover .sab-menu-burger__list{
+		padding-left: 10px;
 		visibility: visible;
 	}
 	.main__burger_up::after{
