@@ -1,0 +1,248 @@
+@import url(comonns.css);
+@import url(fonts.css);
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap");
+
+body{
+	font-family: "Poppins";
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+main{
+	flex-grow: 1;
+}
+[class*=__conteiner]{
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.header {
+	font-weight: 500;
+font-size: 12px;
+line-height: 160%;
+color: rgba(73, 80, 87, 0.5);
+}
+.header__conteiner {
+	display: flex;
+	min-height: 100px;
+	align-items: center;
+	gap: 25px;
+}
+.header__logo {
+	font-weight: 700;
+font-size: 18px;
+line-height: 139%;
+color: #495057;
+}
+.header__logo::after{
+	content: ".";
+	color: #DDBEA9;
+}
+.header__navigation {
+	flex-grow: 1;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+}
+.main__list {
+	align-self: center;
+	display: inline-flex;
+	gap: 25px;
+	flex-wrap: wrap;
+}
+.main__item {
+	transition: 0.3s;
+	position: relative;
+}
+.main__item_up::after{
+	content: "";
+	display: inline-block;
+	margin-left: 5px;
+	width: 8px;
+	height: 5px;
+	background: url(../img/header_icon/gal.svg) center no-repeat;
+	transition: 0.3s;
+}
+.main__item_up:hover::after{
+	transform: rotate(180deg);
+}
+.main__link::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 1px;
+	bottom: 0;
+	left: 50%;
+	background-color:#DDBEA9 ;
+	border-radius: 2px;
+	transition: 0.3s;
+}
+.main__link:hover:before{
+width: 100%;
+left: 0;
+}
+.main__link:hover{
+	color: #495057;
+}
+.main__link {
+}
+.header__sign {
+}
+.sign {
+	transition: 0.3s;
+}
+.sign__link {
+}
+.sign:hover{
+	color: #495057;
+}
+.header__get {
+}
+
+.get {
+}
+.get__link {
+	color: #F8F9FA;
+	display: inline-block;
+	padding: 8px 16px;
+	background: #DDBEA9;
+border-radius: 20px;
+}
+/* --------------------- */
+.sab{
+	position:relative;
+	
+}
+.sab__main {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+}
+.sab:hover .sab__main{
+	visibility: visible;
+	padding-top: 20px;
+	opacity: 1;
+	pointer-events: none;
+}
+
+.sab__list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+overflow: hidden;
+width: 136px;
+	padding: 20px;
+	background: #212529;
+	border-radius: 5px;
+	color: rgba(248, 249, 250, 0.6);
+	pointer-events: auto;
+
+}
+.sab__item{
+	transition: all 0.3s;
+}
+.sab__item:hover {
+	color: #F8F9FA;
+}
+.sab__link {
+}
+/* -----media-------- */
+.header__burger{
+	display: none;
+}
+@media (max-width: 730px){
+
+	.main{
+		display: none;
+	}
+	.header__burger{
+		display: block;
+	}
+	.header__logo{
+		flex: 1 1 auto;
+	}
+	.sign{
+		font-size: 20px;
+	}
+	.header__conteiner{
+		min-height: 60px;
+
+		z-index: 2;
+	}
+	.burger__navigation {
+		z-index: 1;
+		position: absolute;
+		bottom: -60px;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		background-color: #e3e8ee;
+		transform: translate(500px, 0px);
+		transition: all 0.3s;
+		font-size: 20px;
+
+	}
+	.burger:hover .burger__navigation{
+		transform: translate(0px, 0px);
+	}
+	.main-burger {
+	}
+	.main-burger__list {
+		display: inline-block;
+		padding: 40px;
+	}
+	.main-burger__item{
+		
+	}
+	.main-burger__item:not(:last-child){
+		margin-bottom: 30px;
+	}
+	.main-burger__link {
+	}
+	.sab-menu-burger {
+		position: relative;
+	}
+	.sad-menu-burger__content{
+		padding-left: 10px;
+		position: absolute;
+		visibility: hidden;
+		top: 0;
+		left: 100%;
+		width: 200px;
+	}
+	.sab-menu-burger__list {
+	
+	}
+	.sab-menu-burger:hover .sab-menu-burger__list{
+		visibility: visible;
+	}
+	.main__burger_up::after{
+		content: "";
+		display: inline-block;
+		margin-left: 5px;
+		width: 8px;
+		height: 10px;
+		background: url(../img/header_icon/gal.svg)  no-repeat;
+		transition: 0.3s;}
+
+	.sab-menu-burger .main__burger_up::after{
+		transform: rotate(-90deg);
+	}
+	.sab-menu-burger:hover .main__burger_up::after{
+		transform: rotate(90deg);
+	}
+	.sab-menu-burger__item{
+
+	}
+	.sab-menu-burger__item:not(:last-child){
+		margin-bottom: 30px;
+	}
+	.sab-menu-burger__link {
+	}
+}
