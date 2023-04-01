@@ -184,7 +184,7 @@ width: 136px;
 		z-index: 1;
 		position: absolute;
 		bottom: -60px;
-		left: 0;
+		right: 0;
 		height: 100%;
 		width: 0;
 		background-color: #e3e8ee;
@@ -199,6 +199,7 @@ width: 136px;
 		width: 100%;
 		visibility: visible;
 		opacity: 1;
+		
 	}
 	.main-burger {
 	}
