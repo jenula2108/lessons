@@ -10,11 +10,11 @@
 	border-bottom: 2px solid #000;
 	position: relative;
 	align-items: center;
+	transition: all 0.2s;
 }
 .burger__content:hover{
 	border-top: none;
 	border-bottom: none;
-	transition: all 0.2s;
 }
 .burger__content::after,
 .burger__content::before{
