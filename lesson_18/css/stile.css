@@ -413,28 +413,28 @@ gap: 40px;
 
 }
 .column__image {
+	align-self: center;
 	flex: 0 0 47.438017%; /* 287/605 */
 	border-radius: 3px;
-	overflow: hidden;
+
 }
 
 .column__img{
-    /* position: relative;
+	position: relative;
     padding-bottom: 69.69%;
-    display: block; */
-	
+    display: block;
 
 }
 .column__img img {
-	transition: all 0.3s;
+	/* transition: all 0.3s;
 	width: 100%;
-	min-height: 200px;
-	/* width: 100%;
+	min-height: 200px; */
+	width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: cover ; */
+    object-fit: cover ;
 }
 .column__img img:hover{
 	transform:scale(1.1) ;
