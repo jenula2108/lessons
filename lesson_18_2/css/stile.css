@@ -206,13 +206,12 @@ left: 0;
 
 }
 
-.baner__image {
-}
-img{
-width: 100%;
-min-height: 400px;
-object-fit: cover;
-}
+.baner__image img{
+	width: 100%;
+	min-height: 400px;
+	object-fit: cover;
+	}
+
 .baner__text {
 position: absolute;
 top: 40%;
@@ -304,7 +303,6 @@ justify-content: center;
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	min-height: 200px;
 	top: 0;
 	left: 0;
 	object-fit: cover;
