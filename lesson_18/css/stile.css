@@ -22,6 +22,11 @@ main{
 	padding: 0 15px;
 	
 }
+@media(max-width: 930px){
+	[class*=__conteiner]{
+		padding: 0 5px;
+	}
+}
 .header {
 	z-index: 3;
 	position: fixed;
@@ -383,7 +388,7 @@ transition: all 0.2s;
 font-size: 12px;
 line-height: 2.08;
 color: rgba(73, 80, 87, 0.5);
-padding: 0 5px;
+padding: 0px 5px;
 }
 .choose__form{
 	position: relative;
@@ -409,32 +414,33 @@ gap: 40px;
 .page__column {
 	
 	display: flex;
+	
 	gap: 31px;
 
 }
 .column__image {
 	align-self: center;
-	flex: 0 0 47.438017%; /* 287/605 */
+	flex: 0 0 47.438017%;
 	border-radius: 3px;
+	overflow: hidden;
 
 }
 
 .column__img{
+	min-width: 300px;
 	position: relative;
     padding-bottom: 69.69%;
     display: block;
 
 }
 .column__img img {
-	/* transition: all 0.3s;
+	transition: all 0.3s;
+	min-height: 100%;
 	width: 100%;
-	min-height: 200px; */
-	width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: cover ;
+	object-fit: cover;
 }
 .column__img img:hover{
 	transform:scale(1.1) ;
@@ -457,6 +463,12 @@ gap: 15px;
 font-size: 16px;
 line-height: 156.25%; /* 25/16 */
 color: #212529;
+transition: all 0.1s;
+}
+.column__title:hover{
+	font-weight: 700;
+	
+	transform: scale(1.05) translateX(5px);
 }
 .column__text {
 }
@@ -502,17 +514,18 @@ color: rgba(73, 80, 87, 0.5);
 	border-bottom: 2px solid #DDBEA9;
 }
 @media (max-width: 930px){
-	.column{
+	/* .column{
 		flex-direction: column;
 
 	}
 	.column__image,
 	.column__body {
 		flex: 0 1 100%;
-	}
+	} */
 }
 
 @media (max-width: 730px){
+
 	.main__conteiner{
 		margin-top: 60px;
 	}
@@ -538,7 +551,10 @@ color: rgba(73, 80, 87, 0.5);
 	}
 
 }
-@media (max-width: 420px){
+@media (max-width: 489px){
+	.page__column{
+		flex-direction: column;
+	}
 	.choose__item {
 	font-size: 18px;}
 	.column__image,
@@ -568,6 +584,7 @@ color: rgba(73, 80, 87, 0.5);
 }
 .footer__conteiner {
 	flex: 1 1 auto;
+	font-size: 12px;
 }
 
 .contacts__content {
@@ -607,6 +624,7 @@ line-height: 1.38; /* 25/18 */
 	display: flex;
 	justify-content: space-between;
 line-height: 1.66; /* 20/12 */
+
 }
 .create__adress {
 }
@@ -614,15 +632,15 @@ line-height: 1.66; /* 20/12 */
 }
 @media (max-width: 821px){
 	.contacts__content {
-	font-size: 18px;
 	flex-direction: column;
 	align-items: center;
 	gap: 20px;
+	font-size: 18px;
 	}
 
 }
 
-@media (max-width: 420px){
+@media (max-width: 620px){
 	.contacts__content{
 
 	}
