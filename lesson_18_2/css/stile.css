@@ -243,13 +243,14 @@ gap: 15px;
 .page__header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: end;
 	margin-bottom: 45px;
 }
 .page__title {
 	max-width: 393px;
 }
 .page__navigation {
+	padding-bottom: 8px;
 
 }
 
@@ -295,7 +296,7 @@ justify-content: center;
 	border-radius: 3px;
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 63.613232%; /* 250/393 */
+	padding-bottom: 63.613232%;
 
 
 }
