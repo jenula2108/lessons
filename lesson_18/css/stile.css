@@ -526,9 +526,12 @@ color: rgba(73, 80, 87, 0.5);
 		margin-top: 60px;
 	}
 	.page__choose {
-		flex: 0 1 80%;
+		flex: 0 100%;
+		align-items: center;
 	}
-
+.choose__title h2{
+	text-align: center;
+}
 	.page__content {
 		flex: 0 0 100%;
 		flex-wrap: wrap;
