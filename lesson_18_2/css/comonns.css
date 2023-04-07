@@ -1,0 +1,44 @@
+
+.burger {
+	
+}
+.burger__content {
+		display: inline-flex;
+		width: 20px;
+		height: 20px;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	position: relative;
+	align-items: center;
+	transition: all 0.2s;
+}
+.burger__content:hover{
+	border-top: none;
+	border-bottom: none;
+}
+.burger__content::after,
+.burger__content::before{
+	content: "";
+	position: absolute;
+	width: 20px;
+	border: 1px solid #000;
+	transition: all 0.2s;
+}
+
+.burger__content:hover:before{
+	transform: rotate(45deg);
+}
+.burger__content:hover:after{
+	transform: rotate(-45deg);
+}
+@media (any-hover:hover){
+	
+}
+h2{
+
+}
+[class*="__title"]{
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6; 
+}
