@@ -290,23 +290,20 @@ border-radius: 20px;
 }
 
 .baner__content{
-	position: relative;
+	min-height: 500px;
+	background: url(../img/baner.webp) 0 0/cover no-repeat;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	margin-bottom: 100px;
+	justify-content: center;
+	border-radius: 5px;
+	margin-bottom: 94px;
+	padding: 20px 0;
 }
 
-.baner__image img{
-	width: 100%;
-min-height: 400px;
-object-fit: cover;
-}
+
 
 .baner__text {
-position: absolute;
-top: 40%;
-display: inline-flex;
+display: flex;
 flex-direction: column;
 align-items: center;
 gap: 15px;
@@ -317,6 +314,7 @@ gap: 15px;
 	font-size: 12px;
 	line-height: 1.66; /* 20/12 */
 	color: #E5E5E5;
+	flex-grow: 0;
 }
 .baner__title {
 	font-size: 25px;
@@ -325,6 +323,7 @@ gap: 15px;
 	text-align: center;
 	max-width: 605px;
 	color: #F8F9FA;
+	flex-grow: 0;
 
 }
 /* ------page-------- */
@@ -337,6 +336,7 @@ gap: 15px;
 	margin-bottom: 60px;
 
 }
+
 .page__choose {
 	flex: 0 1 38.229572%;
 }
@@ -573,19 +573,19 @@ color: rgba(73, 80, 87, 0.5);
 		margin-bottom: 20px;
 	}
 		.page__choose {
-			flex: 0 1 100%;
+		flex: 0 1 100%;
 		}
 		.column__img{
-			
-			position: relative;
-			padding-bottom: 69.686411%;
-			display: block;
-			
+		
+		position: relative;
+		padding-bottom: 69.686411%;
+		display: block;
+		
 		
 		}
 		.column__img img{
-			max-width: 100%;
-			
+		max-width: 100%;
+		
 		}
 	}
 
