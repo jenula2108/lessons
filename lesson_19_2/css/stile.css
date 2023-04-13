@@ -55,11 +55,14 @@ line-height: 140%;
 .article__footer {
 	display: flex;
 	column-gap: 80px;
+	
+	flex-wrap: wrap;
 }
 .article__data {
 }
 .article__design {
 }
+
 .article__image {
 	position: relative;
 	padding-bottom: 87.842466%; /* 513/584 */
@@ -90,6 +93,7 @@ line-height: 140%;
 		display: grid;
 		gap: 32px;
 		grid-template-columns: repeat(1, 1fr);}
-		.article__image-big {
-			grid-column: span 1 ;}
+	.article__image-big {
+		grid-column: span 1 ;}
+		
 	}
