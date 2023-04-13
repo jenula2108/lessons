@@ -140,6 +140,7 @@ border: 1px solid #3056D3;
 border-radius: 4px;
 font-weight: 500;
 transition: 0.3s;
+align-self: center;
 }
 .lesson__page:hover{
 	background-color:#3056D3 ;
@@ -147,4 +148,11 @@ transition: 0.3s;
 }
 .lesson__page:active{
 	transform: scale(0.95);
+}
+@media (max-width:420px){
+	.lesson__link{
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
 }
