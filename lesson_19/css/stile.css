@@ -22,6 +22,9 @@ main{
 	margin: 0 auto;
 	padding: 0 15px;
 }
+.main__container{
+	margin-bottom: 50px;
+}
 @media(max-width: 490px){
 	[class*=__container]{
 		padding: 0 5px;
@@ -231,7 +234,8 @@ flex-grow: 1;
 	left: 0;
 }
 .products__buttons {
-	margin: 0 auto 120px auto;
+	margin:  0 auto;
+	
 	display: flex;
 	width: 84px;
 	height: 42px;
