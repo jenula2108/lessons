@@ -638,13 +638,18 @@ line-height: 2.83;
 	}
 }
 
-
+.footer{
+	background: #F8F9FB;
+}
 .blog {
-
+	
 	// .blog__content
 
 	&__content {
-
+		max-width: 1900px;
+		margin: 0 auto;
+	}
+	&__columns{
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		gap: 30px;
@@ -660,6 +665,7 @@ line-height: 2.83;
 font-size: 24px;
 line-height: 2.83;
 margin-bottom: 30px;
+background: #F8F9FB;
 @media (max-width: 780px) {
 	margin-bottom: 20px;
 }
@@ -669,6 +675,7 @@ margin-bottom: 30px;
 	// .blog__body
 
 	&__body {
+		background: white;
 		flex: 0 1 25%;
 		padding: 25px;
 		display: flex;
