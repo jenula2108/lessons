@@ -866,13 +866,21 @@ main {
   }
 }
 
+.footer {
+  background: #F8F9FB;
+}
+
 .blog__content {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+.blog__columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 @media (max-width: 780px) {
-  .blog__content {
+  .blog__columns {
     gap: 20px;
   }
 }
@@ -881,6 +889,7 @@ main {
   font-size: 24px;
   line-height: 2.83;
   margin-bottom: 30px;
+  background: #F8F9FB;
 }
 @media (max-width: 780px) {
   .blog__blog {
@@ -888,6 +897,7 @@ main {
   }
 }
 .blog__body {
+  background: white;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
